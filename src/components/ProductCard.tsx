@@ -11,6 +11,7 @@ import {
 } from "react-icons/ai";
 
 export interface IProduct {
+  quantity: number;
   id: number;
   img: string;
   name: string;
