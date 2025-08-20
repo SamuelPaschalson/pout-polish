@@ -4,7 +4,21 @@ import CartProduct from "./CartProduct";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { clearCart } from "@/redux/features/cartSlice";
 
-const Cart = ({ setShowCart }: any) => {
+// Define the product interface
+interface CartProduct {
+  id: number;
+  name: string;
+  img: string;
+  price: number;
+  quantity: number;
+}
+
+// Define the props interface
+interface CartProps {
+  setShowCart: (show: boolean) => void;
+}
+
+const Cart = ({ setShowCart }: CartProps) => {
   const products = useAppSelector((state) => state.cartReducer);
   const dispatch = useAppDispatch();
 
@@ -47,7 +61,7 @@ const Cart = ({ setShowCart }: any) => {
         </h3>
 
         <div className="mt-6 space-y-2">
-          {products?.map((item: any) => (
+          {products?.map((item: CartProduct) => (
             <CartProduct
               key={item.id}
               id={item.id}
