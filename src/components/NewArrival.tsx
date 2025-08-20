@@ -6,15 +6,30 @@ import ProductCard, { IProduct } from "./ProductCard";
 
 const whisper = Whisper({ subsets: ["latin"], weight: ["400"] });
 
+// Define proper interfaces
+interface ProductData {
+  id: number;
+  name: string;
+  img: string;
+  price: number;
+  sale?: boolean;
+  category: string[];
+}
+
+interface TabData {
+  [key: string]: string;
+}
+
 const NewArrival = () => {
-  const shuffleArray = (array: any) => {
+  // Properly type the shuffle function
+  const shuffleArray = (array: ProductData[]): ProductData[] => {
     return array
-      .map((value: any) => ({ value, sort: Math.random() }))
-      .sort((a: any, b: any) => a.sort - b.sort)
-      .map(({ value }: any) => value);
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
   };
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<ProductData[]>([]);
 
   useEffect(() => {
     setData(shuffleArray(Data).slice(0, 15));
@@ -24,7 +39,7 @@ const NewArrival = () => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   const handleTab = (index: number) => {
-    const category = tabsData[index].toLowerCase(); // Fixed toLowerCase()
+    const category = tabsData[index].toLowerCase();
     setSelectedTab(index);
 
     if (category === "all") {
@@ -36,10 +51,11 @@ const NewArrival = () => {
       item.category.map((cat) => cat.toLowerCase()).includes(category)
     );
 
-    setData(shuffleArray(filteredData).slice(0, 15)); // Consistent slice
+    setData(shuffleArray(filteredData).slice(0, 15));
   };
+
   return (
-    <div className="mx-auto px-[15px] pt-32 px-4">
+    <div className="mx-auto px-4 pt-32">
       <div className="text-center">
         <h3 className={`${whisper.className} text-[40px] text-gray-500`}>
           For your beauty
@@ -60,7 +76,7 @@ const NewArrival = () => {
           ))}
         </ul>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pt-8">
-          {data?.map((item: IProduct, index: number) => (
+          {data.map((item) => (
             <ProductCard
               key={item.id}
               id={item.id}
