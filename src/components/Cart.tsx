@@ -23,7 +23,7 @@ const Cart = ({ setShowCart }: any) => {
   const createWhatsAppMessage = () => {
     const productNames = getSelectedProductNames();
     const total = getTotal();
-    return `https://wa.me/2348178694956?text=I'm interested in these products: ${productNames}. Total: $${total}.00`;
+    return `https://wa.me/2348178694956?text=I'm interested in these products: ${productNames}. Total: ₦${total}.00`;
   };
 
   const handleCheckout = () => {
