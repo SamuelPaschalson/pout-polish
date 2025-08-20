@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Data from "@/utils/productData";
 import { Whisper } from "next/font/google";
-import ProductCard from "./ProductCard";
+import ProductCard, { IProduct } from "./ProductCard";
 
 const whisper = Whisper({ subsets: ["latin"], weight: ["400"] });
 
