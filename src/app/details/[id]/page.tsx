@@ -4,7 +4,7 @@ import Data from "@/utils/productData";
 import { useParams } from "next/navigation";
 import { IProduct } from "@/components/ProductCard";
 import Image from "next/image";
-import Link from "next/link"; // Fixed import
+import Link from "next/link";
 
 import {
   AiFillStar,
@@ -52,8 +52,6 @@ const DetailPage = () => {
       <div className="bg-gray-100 py-4">
         <div className="container flex gap-4 items-center text-gray-500">
           <Link href="/" className="cursor-pointer hover:text-[#FF7043]">
-            {" "}
-            {/* Fixed to Link */}
             Home
           </Link>
           <div className="w-[30px] h-[2px] bg-gray-400" />
@@ -87,10 +85,8 @@ const DetailPage = () => {
             </div>
 
             <div className="text-[#161616] space-y-6">
-              <h2 className="text-3xl font-semibold">{productData?.name}</h2>{" "}
-              {/* Fixed text-3x1 to text-3xl, font-sembold to font-semibold */}
-              <p className="text-xl">${productData?.price}.00</p>{" "}
-              {/* Fixed text-x1 to text-xl */}
+              <h2 className="text-3xl font-semibold">{productData?.name}</h2>
+              <p className="text-xl">${productData?.price}.00</p>
             </div>
             <p className="text-gray-500 text-[14px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit vel
@@ -109,7 +105,7 @@ const DetailPage = () => {
             <div className="flex gap-4 items-center uppercase py-4 text-[14px]">
               <div className="flex gap-1 items-center">
                 <AiOutlineHeart />
-                Add to Wish List {/* Fixed "Mish" to "Wish" */}
+                Add to Wish List
               </div>
               <div className="flex gap-1 items-center">
                 <MdCompareArrows />
@@ -130,7 +126,7 @@ const DetailPage = () => {
             </div>
             <div className="w-[30px] h-[2px] bg-gray-400" />
             <div className="flex gap-1 items-center pt-4">
-              SHARE: {/* Fixed "SMARE" to "SHARE" */}
+              SHARE:
               <div className="flex gap-2 items-center text-[18px]">
                 <FaFacebookSquare /> <FaTwitter /> <FaInstagram />
               </div>
@@ -142,4 +138,4 @@ const DetailPage = () => {
   );
 };
 
-export default DetailPage; // Added missing export
+export default DetailPage;

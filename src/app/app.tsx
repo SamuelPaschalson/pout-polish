@@ -12,7 +12,7 @@ function App({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [showCart, setShowCart] = useState("");
+  const [showCart, setShowCart] = useState(false); // Changed from string to boolean
   return (
     <Provider store={store}>
       <NavBar setShowCart={setShowCart} />
