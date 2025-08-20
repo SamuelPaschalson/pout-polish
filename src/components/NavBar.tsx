@@ -5,8 +5,13 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Image from "next/image";
 
-const NavBar = ({ setShowCart }: any) => {
+interface NavBarProps {
+  setShowCart: (show: boolean) => void;
+}
+
+const NavBar = ({ setShowCart }: NavBarProps) => {
   const cartCount = useAppSelector((state) => state.cartReducer.length);
+
   return (
     <div className="bg-white py-4 sticky top-0 z-10">
       <div className="mx-auto px-[15px] flex justify-between items-center">

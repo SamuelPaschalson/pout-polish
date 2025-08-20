@@ -60,7 +60,7 @@ const Cart = ({ setShowCart }: any) => {
         </div>
         <div className="flex justify-between items-center font-medium text-xl py-4">
           <p>Total:</p>
-          <p>${getTotal()}.00</p>
+          <p>₦{getTotal()}.00</p>
         </div>
 
         <button className="bg-black text-white text-center w-full rounded-3xl py-2 hover:bg-[#FF7043] mb-4 mt-4">
