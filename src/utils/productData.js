@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    img: "/product2.jpg",
+    name: "Lip Scrub",
+    price: 1500.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 2,
+    img: "/product1.jpg",
+    name: "Lip Balm.",
+    price: 2000,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 3,
+    img: "/product3.jpg",
+    name: "Lip Brush.",
+    price: 1200.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 4,
+    img: "/product4.jpg",
+    name: "Lip Gloss.",
+    price: 2500.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 5,
+    img: "/product5.jpg",
+    name: "Lip Oil.",
+    price: 3000.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 6,
+    img: "/product6.jpg",
+    name: "Lip Mask.",
+    price: 1500.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 7,
+    img: "/product7.jpg",
+    name: "Full Lip Kit + Mask",
+    price: 5500.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+  {
+    id: 8,
+    img: "/product8.jpg",
+    name: "Full Gloss",
+    price: 2500.0,
+    category: ["lipsticks"],
+    sale: true,
+  },
+];
+
+export default products;
