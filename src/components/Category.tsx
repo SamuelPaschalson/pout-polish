@@ -24,7 +24,7 @@ const data = [
 const Category = () => {
   return (
     <div className="bg-no-repeat py-16 mt-32 bg-[url(/cat.jpg)]">
-      <div className="text-center text-white mx-auto px-[15px]">
+      <div className="text-center text-[#E91E63] mx-auto px-[15px]">
         <h3 className={`${whisper.className} text-[40px]`}>
           Favourite Category
         </h3>

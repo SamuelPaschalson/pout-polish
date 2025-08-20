@@ -35,7 +35,7 @@ const NewArrival = () => {
     setData(shuffleArray(Data).slice(0, 15));
   }, []);
 
-  const tabsData = ["All", "Skin Care", "Lipsticks", "Makeup", "Nail & Wax"];
+  const tabsData = ["All", "Lip Care", "Lipsticks"];
   const [selectedTab, setSelectedTab] = useState(0);
 
   const handleTab = (index: number) => {

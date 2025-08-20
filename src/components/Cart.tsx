@@ -4,7 +4,6 @@ import CartProduct from "./CartProduct";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { clearCart } from "@/redux/features/cartSlice";
 
-// Define the product interface
 interface CartProduct {
   id: number;
   name: string;
@@ -13,7 +12,6 @@ interface CartProduct {
   quantity: number;
 }
 
-// Define the props interface
 interface CartProps {
   setShowCart: (show: boolean) => void;
 }
@@ -28,12 +26,10 @@ const Cart = ({ setShowCart }: CartProps) => {
     return total;
   };
 
-  // Get all selected product names
   const getSelectedProductNames = () => {
     return products.map((item) => item.name).join(", ");
   };
 
-  // Create a WhatsApp message with product names
   const createWhatsAppMessage = () => {
     const productNames = getSelectedProductNames();
     const total = getTotal();
@@ -42,9 +38,6 @@ const Cart = ({ setShowCart }: CartProps) => {
 
   const handleCheckout = () => {
     const productNames = getSelectedProductNames();
-    console.log("Selected products:", productNames);
-
-    // Open WhatsApp with pre-filled message
     window.open(createWhatsAppMessage(), "_blank");
     dispatch(clearCart());
   };

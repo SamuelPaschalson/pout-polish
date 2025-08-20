@@ -5,19 +5,19 @@ const BlogSection = () => {
   const data = [
     {
       img: "/blog.webp",
-      title: "Lorem ipsum dolor sit amet.",
+      title: "Lip Care 101",
       date: "Sept 31, 2025",
       comment: 8,
     },
     {
       img: "/blog1.jpeg",
-      title: "Lorem ipsum dolor sit amet.",
+      title: "What are you putting on",
       date: "Sept 26, 2025",
       comment: 8,
     },
     {
       img: "/blog2.jpg",
-      title: "Lorem ipsum dolor sit amet.",
+      title: "Homemade Lip Care",
       date: "Sept 30, 2025",
       comment: 8,
     },

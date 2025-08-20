@@ -20,7 +20,7 @@ const products = [
     img: "/product3.jpg",
     name: "Lip Brush.",
     price: 1200.0,
-    category: ["lipsticks"],
+    category: ["lip care"],
     sale: true,
   },
   {
@@ -36,7 +36,7 @@ const products = [
     img: "/product5.jpg",
     name: "Lip Oil.",
     price: 3000.0,
-    category: ["lipsticks"],
+    category: ["lip care"],
     sale: true,
   },
   {
@@ -52,7 +52,7 @@ const products = [
     img: "/product7.jpg",
     name: "Full Lip Kit + Mask",
     price: 5500.0,
-    category: ["lipsticks"],
+    category: ["lip care"],
     sale: true,
   },
   {
