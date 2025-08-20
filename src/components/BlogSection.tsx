@@ -6,13 +6,13 @@ const BlogSection = () => {
     {
       img: "/blog.webp",
       title: "Lorem ipsum dolor sit amet.",
-      date: "Sept 30, 2025",
+      date: "Sept 31, 2025",
       comment: 8,
     },
     {
       img: "/blog1.jpeg",
       title: "Lorem ipsum dolor sit amet.",
-      date: "Sept 30, 2025",
+      date: "Sept 26, 2025",
       comment: 8,
     },
     {

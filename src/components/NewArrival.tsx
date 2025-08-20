@@ -84,6 +84,7 @@ const NewArrival = () => {
               name={item.name}
               price={item.price}
               sale={item.sale}
+              category={[]}
             />
           ))}
         </div>
