@@ -1,9 +1,7 @@
-import type { NextConfig } from 'next';
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-
-  // ✅ Image optimization: allows images from your Vercel domain + other safe sources
   images: {
     remotePatterns: [
       {
@@ -12,21 +10,15 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'cdn.poutandpolish.com', // optional future CDN
+        hostname: 'res.cloudinary.com',
       },
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com', // if you use Unsplash images
-      },
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com', // for Cloudinary hosted images
+        hostname: 'images.unsplash.com',
       },
     ],
     formats: ['image/avif', 'image/webp'],
   },
-
-  // ✅ Add caching + SEO headers
   async headers() {
     return [
       {
@@ -41,14 +33,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-
-  // ✅ Build output optimized for Vercel
   output: 'standalone',
-
-  // ✅ Optional CSS optimization
-  experimental: {
-    optimizeCss: true,
-  },
 };
 
 export default nextConfig;
