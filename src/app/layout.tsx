@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     default: 'Pout & Polish',
     template: '%s | Pout & Polish',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   description:
     'Pout & Polish — nourish, care, and shine. The ultimate lip care experience.',
   keywords: [
