@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pout-polish.vercel.app
+
+# Sitemaps
+Sitemap: https://pout-polish.vercel.app/sitemap.xml
