@@ -78,7 +78,7 @@ const NavBar = ({ setShowCart }: NavBarProps) => {
   const handleWhatsAppClick = () => {
     const message = "Hi! I'm interested in your lip care products.";
     window.open(
-      `https://wa.me/2348178694956?text=${encodeURIComponent(message)}`,
+      `https://wa.me/2347073166951?text=${encodeURIComponent(message)}`,
       '_blank'
     );
   };

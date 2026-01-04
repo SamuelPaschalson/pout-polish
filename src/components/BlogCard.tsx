@@ -1,12 +1,20 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 // Inline icon
 const ArrowRightIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
   </svg>
 );
 
@@ -21,7 +29,10 @@ interface BlogCardProps {
 const BlogCard = ({ img, title, date, category, readTime }: BlogCardProps) => {
   const handleReadMore = () => {
     const message = `Hi! I just read about "${title}" on your website and I'm interested in learning more about your lip care products!`;
-    window.open(`https://wa.me/2348178694956?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(
+      `https://wa.me/2347073166951?text=${encodeURIComponent(message)}`,
+      '_blank'
+    );
   };
 
   return (

@@ -108,7 +108,7 @@ const DetailPage = () => {
         productData.name
       } (₦${(productData.price * quantity).toLocaleString()})`;
       window.open(
-        `https://wa.me/2348178694956?text=${encodeURIComponent(message)}`,
+        `https://wa.me/2347073166951?text=${encodeURIComponent(message)}`,
         '_blank'
       );
     }

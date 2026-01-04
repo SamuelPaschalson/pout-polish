@@ -75,7 +75,7 @@ const Cart = ({ setShowCart }: CartProps) => {
     const total = getTotal();
     const message = `Hi! I'd like to place an order:\n\n${items}\n\nTotal: ₦${total.toLocaleString()}`;
     window.open(
-      `https://wa.me/2348178694956?text=${encodeURIComponent(message)}`,
+      `https://wa.me/2347073166951?text=${encodeURIComponent(message)}`,
       '_blank'
     );
     clearCart();

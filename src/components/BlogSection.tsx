@@ -1,12 +1,20 @@
-"use client";
+'use client';
 
-import React from "react";
-import BlogCard from "./BlogCard";
+import React from 'react';
+import BlogCard from './BlogCard';
 
 // Inline icon
 const ArrowRightIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
   </svg>
 );
 
@@ -14,33 +22,37 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop",
-      title: "The Art of Lip Care: A Complete Guide",
-      date: "Dec 28, 2025",
-      category: "Guides",
-      readTime: "5 min",
+      img: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop',
+      title: 'The Art of Lip Care: A Complete Guide',
+      date: 'Dec 28, 2025',
+      category: 'Guides',
+      readTime: '5 min',
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&h=400&fit=crop",
-      title: "Winter Lip Care Essentials",
-      date: "Dec 25, 2025",
-      category: "Seasonal",
-      readTime: "3 min",
+      img: 'https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&h=400&fit=crop',
+      title: 'Winter Lip Care Essentials',
+      date: 'Dec 25, 2025',
+      category: 'Seasonal',
+      readTime: '3 min',
     },
     {
       id: 3,
-      img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=400&fit=crop",
-      title: "DIY Natural Lip Scrubs",
-      date: "Dec 20, 2025",
-      category: "DIY",
-      readTime: "4 min",
+      img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=400&fit=crop',
+      title: 'DIY Natural Lip Scrubs',
+      date: 'Dec 20, 2025',
+      category: 'DIY',
+      readTime: '4 min',
     },
   ];
 
   const handleViewAll = () => {
-    const message = "Hi! I'd love to learn more about lip care tips and your products!";
-    window.open(`https://wa.me/2348178694956?text=${encodeURIComponent(message)}`, "_blank");
+    const message =
+      "Hi! I'd love to learn more about lip care tips and your products!";
+    window.open(
+      `https://wa.me/2347073166951?text=${encodeURIComponent(message)}`,
+      '_blank'
+    );
   };
 
   return (
@@ -52,7 +64,9 @@ const BlogSection = () => {
             <span className="text-rose-400 font-serif italic text-2xl inline-block mb-2">
               Latest Stories
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl text-stone-900">From Our Journal</h2>
+            <h2 className="font-serif text-4xl md:text-5xl text-stone-900">
+              From Our Journal
+            </h2>
           </div>
           <button
             onClick={handleViewAll}
