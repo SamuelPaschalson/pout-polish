@@ -1,5 +1,5 @@
 export const BUSINESS_CONFIG = {
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '2348178694956',
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '2347073166951',
   businessName: process.env.NEXT_PUBLIC_BUSINESS_NAME || 'Pout & Polish',
   businessEmail:
     process.env.NEXT_PUBLIC_BUSINESS_EMAIL || 'info@poutandpolish.com',
